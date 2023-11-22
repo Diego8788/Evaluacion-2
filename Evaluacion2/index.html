@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Bienvenido</title>
+</head>
+
+<body>
+    <!--pantalla de carga splash screen-->
+    <div id="splash-screen">
+        <div id="loading-icon"></div>
+        <p>Bienvenido espere un  momento...</p>
+    </div>
+
+    <!--Pantalla de inicio-->
+    <div id="home-screen" class="hidden">
+        <h1>Bienvenido a mi Portafolio Personal</h1>
+        <!-- El botón con el enlace a index.html -->
+        <a href="index2.html">
+            <button id="start-button">Siguiente</button>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator){
+            navigator.serviceWorker.register('servive-worker.js').then(function(registration){
+                console.log('Service worker registrado con exito:', registration);
+            }).catch(function(error){
+                console.log('Error al registrar el service worker:', error);
+            });
+        }
+    </script>
+</body>
+</html>
