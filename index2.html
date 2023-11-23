@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="manifest2.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>Portafolio - Diego Mendez</title>
+
+
+
+	<link rel="manifest" href="manifest2.json">
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker
+				.register('/service-worker.js')
+				.then(function (registration) {
+					console.log('Service Worker registrado con éxito:', registration);
+				})
+				.catch(function (error) {
+					console.log('Error al registrar el Service Worker:', error);
+				});
+		}
+	</script>
+
+
+
+</head>
+
+<body>
+
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<h1>T.S.U. Juan Diego Mendez Olvera</h1>
+				<p>Tecnico superior universitario en tecnologias de la informacion area de desarrollo de sofware
+					multiplataforma</p>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Mis proyectos</a>
+				<a href="#">Visitas Academicas</a>
+				<a href="#">Recuerdos</a>
+			</div>
+		</header>
+
+		<section class="grid" id="grid">
+			<div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calle"
+				data-descripcion="Puebla de Zaragoza Mexico">
+				<div class="item-contenido">
+					<img src="img/todos1.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calles">
+				<div class="item-contenido">
+					<img src="img/todos2.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calles"
+				data-descripcion="Cholula Puebla, Mexico">
+				<div class="item-contenido">
+					<img src="img/todos3.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calles">
+				<div class="item-contenido">
+					<img src="img/todos4.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calles">
+				<div class="item-contenido">
+					<img src="img/todos6.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="ciudades" data-etiquetas="ciudades autos carros calles">
+				<div class="item-contenido">
+					<img src="img/todos9.png" alt="">
+				</div>
+			</div>
+
+
+
+
+
+			<div class="item" data-categoria="mis proyectos" data-etiquetas="paisajes montañas mar playas"
+				data-descripcion="Desarrollo de sitio web para el hotel Jasar el cual tenia como objetivo
+				 realizar reservaciones para una mejor experiencia de los usuarios.">
+				<div class="item-contenido">
+					<img src="img/hotel.png" alt="">
+				</div>
+			</div>
+
+
+			<div class="item" data-categoria="mis proyectos" data-etiquetas="paisajes montañas mar playas"
+				data-descripcion="AutoDrip sistema de riego automatico mediante 
+				 tecnologias de IOT en la feria Lobo 2022 de la UTSJR.">
+				<div class="item-contenido">
+					<img src="img/proyecto.png" alt="">
+				</div>
+			</div>
+
+
+			<div class="item" data-categoria="mis proyectos" data-etiquetas="paisajes montañas mar playas"
+				data-descripcion="Sistema de cultivo tecnificado accesible para el aprovechamiento 
+				 de espacios y agua en la región serrana. Desarrollado por TSU Felipe Mayorga Melo y 
+				 TSU Juan diego Méndez Olvera. Su objetivo principal consiste en proponer un sistema 
+				 de cultivo tecnificado, mediante las herramientas de código abierto de IoT, para el 
+				 aprovechamiento de espacios y agua en la región serrana.">
+				<div class="item-contenido">
+					<img src="img/proyecto2.png" alt="">
+				</div>
+			</div>
+
+
+			<div class="item" data-categoria="mis proyectos" data-etiquetas="paisajes montañas mar playas"
+				data-descripcion="Desarrollo de un sistema de un Mouse Virtual con Vision Artificial, utilizando
+			el lenguaje de programacion de Python y diferentes Appis con Open CV2 para la deteccion de gestos del Mouse">
+				<div class="item-contenido">
+					<img src="img/mouse.jpg" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="mis proyectos" data-etiquetas="paisajes montañas mar playas"
+				data-descripcion="Desarrollo de un sistema de un Mouse Virtual con Vision Artificial, utilizando
+			el lenguaje de programacion de Python y diferentes Appis con Open CV2 para la deteccion de gestos">
+				<div class="item-contenido">
+					<img src="img/mouse.jpg" alt="">
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="item" data-categoria="visitas academicas" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="Visita academica Empresa Pelikan">
+				<div class="item-contenido">
+					<img src="img/empresa.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="visitas academicas" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="Visita Academica Empresa Bimbo.">
+				<div class="item-contenido">
+					<img src="img/empresa1.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="visitas academicas" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="Dueño y fundador de Vaka Innovetion Martin Vaca">
+				<div class="item-contenido">
+					<img src="img/empresa3.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="visitas academicas" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="Visita academica Vaka Innovetion">
+				<div class="item-contenido">
+					<img src="img/empresa4.png" alt="">
+				</div>
+			</div>
+
+
+
+			<div class="item" data-categoria="recuerdos" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/visita.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="recuerdos" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/visita2.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="recuerdos" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/visita3.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="recuerdos" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/visita4.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="recuerdos" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/visita5.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="recuerdos" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/visita6.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="recuerdos" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/visita7.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="recuerdos" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/visita8.png" alt="">
+				</div>
+			</div>
+			<div class="item" data-categoria="recuerdos" data-etiquetas="ciudades paisajes carreteras"
+				data-descripcion="8.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/visita9.png" alt="">
+				</div>
+			</div>
+
+
+
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+
+		<footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="https://www.facebook.com/juandiego.mendez.12382?mibextid=ZbWKwL" target="_blank"
+						class="facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="https://instagram.com/diego_olv91?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"
+						class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p>Sitio diseñado por <a href="#">Diego Mendez</a></p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main2.js"></script>
+</body>
+
+</html>
